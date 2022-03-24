@@ -16,7 +16,7 @@ class UsersController < ApplicationController
       redirect_to @user      # some code
     else
       #redirect_to action: :new
-      render "new"# doesn't work properly.
+      render :new, status: :unprocessable_entity# doesn't work properly.
     end 
   end
 
