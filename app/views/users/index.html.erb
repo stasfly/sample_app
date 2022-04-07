@@ -1,0 +1,15 @@
+<%provide(:title, 'All users')%>
+<h1>
+  List of users
+</h1>
+
+<p><% @users.each do |u| %>
+    <p>
+      User name: <%= link_to u.name.capitalize, user_path(u) %>, 
+      email: <%= u.email %>
+    </p>
+  <% end %>
+</p>
+
+
+
