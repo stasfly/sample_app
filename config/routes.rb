@@ -17,7 +17,7 @@ Rails.application.routes.draw do
   get 'contact', to: 'static_pages#contact'
   get 'signup',  to: 'users#new' #link_to works only wit 'signup' or '/signup'
 
-
+  resources :users
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   #resources :static_pages
